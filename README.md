@@ -1,2 +1,2 @@
 # MJH521.github.io
-My personal game development and computer science portfolio.
+Personal MAGD and CS Portfolio
