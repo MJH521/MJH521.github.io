@@ -120,83 +120,118 @@ section h2 {
 }
 
 
-/* Projects */
+/* College Project Timeline */
 
-.project-grid {
+.timeline {
+    margin-top: 50px;
+}
+
+.timeline-semester {
     display: grid;
+    grid-template-columns: 150px 1fr;
 
-    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 
-    gap: 25px;
-
-    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
-.project-card {
-    background-color: #1b1b1b;
+.timeline-date {
+    text-align: right;
 
-    border: 1px solid #333333;
-
-    border-radius: 8px;
-
-    overflow: hidden;
+    padding-top: 10px;
 }
 
-.project-image {
-    height: 200px;
+.timeline-date span {
+    display: block;
 
-    background-color: #292929;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 0.9rem;
 
     color: #888888;
 }
 
-.project-info {
-    padding: 25px;
+.timeline-date strong {
+    display: block;
+
+    font-size: 1.5rem;
 }
 
-.project-info h3 {
+.timeline-content {
+    position: relative;
+
+    padding-left: 35px;
+}
+
+.timeline-content::before {
+    content: "";
+
+    position: absolute;
+
+    left: 8px;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background-color: #333333;
+}
+
+.timeline-project {
+    position: relative;
+
+    background-color: #1b1b1b;
+
+    border: 1px solid #333333;
+    border-radius: 8px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+}
+
+.timeline-project::before {
+    content: "";
+
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background-color: #111111;
+
+    border: 2px solid #ffffff;
+
+    left: -35px;
+    top: 30px;
+}
+
+.timeline-project h3 {
+    margin-bottom: 8px;
+
+    font-size: 1.3rem;
+}
+
+.timeline-project p {
+    color: #bbbbbb;
+}
+
+.project-type {
+    font-size: 0.85rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
     margin-bottom: 10px;
 }
 
-.project-info p {
-    color: #bbbbbb;
+.future-project {
+    border-style: dashed;
 }
 
-.technologies {
-    margin-top: 15px;
-    font-size: 0.85rem;
-}
-
-.project-link {
-    display: inline-block;
-
-    margin-top: 20px;
-
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project-link:hover {
-    text-decoration: underline;
-}
-
-
-/* About */
-
-#about {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#about p {
-    color: #bbbbbb;
-    font-size: 1.1rem;
+.future-project p {
+    color: #888888;
 }
 
 
@@ -223,6 +258,22 @@ footer {
 /* Mobile */
 
 @media (max-width: 800px) {
+
+    .timeline-semester {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .timeline-date {
+        text-align: left;
+
+        padding-left: 35px;
+    }
+
+    .timeline-content {
+        padding-left: 35px;
+    }
 
     nav {
         flex-direction: column;
