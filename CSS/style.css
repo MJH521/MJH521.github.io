@@ -226,6 +226,20 @@ section h2 {
     margin-bottom: 10px;
 }
 
+.project-link {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
 .future-project {
     border-style: dashed;
 }
