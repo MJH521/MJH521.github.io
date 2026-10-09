@@ -307,4 +307,106 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    
+    /* Individual Project Pages */
+
+    .project-page {
+        max-width: 1100px;
+        margin: auto;
+        padding: 45px 20px 80px;
+    }
+
+    .project-page > section {
+        max-width: none;
+        margin: 0;
+        padding: 35px 0;
+    }
+
+    .project-back-link {
+        display: inline-block;
+        color: #bbbbbb;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+
+    .project-back-link:hover {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    .project-detail-intro h1 {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    .project-meta {
+        color: #888888;
+        margin-bottom: 25px;
+    }
+
+    .project-lead {
+        max-width: 800px;
+        color: #bbbbbb;
+        font-size: 1.2rem;
+    }
+
+    .project-detail-section {
+        border-top: 1px solid #333333;
+    }
+
+    .project-detail-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .project-detail-section > p {
+        max-width: 800px;
+        color: #bbbbbb;
+    }
+
+    .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .project-tags span {
+        background-color: #1b1b1b;
+        border: 1px solid #333333;
+        border-radius: 4px;
+        padding: 8px 14px;
+        color: #bbbbbb;
+    }
+
+    .project-media-placeholder {
+        border: 1px dashed #444444;
+        border-radius: 8px;
+        padding: 50px 20px;
+        text-align: center;
+        color: #888888;
+    }
+
+    @media (max-width: 800px) {
+        .project-detail-intro h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    /* Project Team Credits */
+
+    .project-credits {
+        max-width: 800px;
+        padding-left: 25px;
+        margin-top: 20px;
+        color: #bbbbbb;
+    }
+
+    .project-credits li {
+        margin-bottom: 12px;
+    }
+
+    .project-credits strong {
+        color: #ffffff;
+    }
 }
