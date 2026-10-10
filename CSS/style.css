@@ -509,3 +509,95 @@ footer {
         }
     }
 }
+
+@media (min-width: 801px) {
+    .project-page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 35px 20px 70px;
+    }
+
+    .project-page > section {
+        max-width: none;
+        margin: 0;
+        padding: 24px 0;
+    }
+
+    .project-page > .project-detail-section {
+        border-top: 1px solid #333333;
+    }
+
+    .project-detail-intro h1 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        margin-bottom: 16px;
+    }
+
+    .project-meta {
+        color: #888888;
+        margin-bottom: 20px;
+    }
+
+    .project-lead,
+    .project-detail-section > p {
+        color: #bbbbbb;
+        line-height: 1.7;
+    }
+
+    .project-lead {
+        font-size: 1.2rem;
+        margin-bottom: 24px;
+    }
+
+    .project-detail-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .project-credits {
+        padding-left: 25px;
+        margin-top: 16px;
+        color: #bbbbbb;
+    }
+
+    .project-credits li {
+        margin-bottom: 8px;
+    }
+
+    .project-media-placeholder {
+        border: 1px dashed #444444;
+        border-radius: 8px;
+        padding: 35px 20px;
+        text-align: center;
+        color: #888888;
+    }
+}
+
+/* Homepage spacing */
+main:not(.project-page) > section {
+    padding: 24px 20px;
+}
+
+main:not(.project-page) > .hero {
+    min-height: 0;
+    padding: 36px 20px;
+}
+
+main:not(.project-page) > .hero > div > p:last-child {
+    margin-bottom: 0;
+}
+
+/* Dividers between homepage sections */
+main:not(.project-page) > section + section {
+    border-top: 1px solid #333333;
+}
+
+main > section[id] {
+    scroll-margin-top: 90px;
+}
+
+@media (max-width: 800px) {
+    main > section[id] {
+        scroll-margin-top: 130px;
+    }
+}
