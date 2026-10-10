@@ -307,48 +307,19 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    
+        
     /* Individual Project Pages */
 
     .project-page {
         max-width: 1100px;
-        margin: auto;
-        padding: 45px 20px 80px;
+        margin: 0 auto;
+        padding: 35px 20px 70px;
     }
 
-    .project-page > section {
+    .project-page section {
         max-width: none;
         margin: 0;
-        padding: 35px 0;
-    }
-
-    .project-back-link {
-        display: inline-block;
-        color: #bbbbbb;
-        text-decoration: none;
-        margin-bottom: 20px;
-    }
-
-    .project-back-link:hover {
-        color: #ffffff;
-        text-decoration: underline;
-    }
-
-    .project-detail-intro h1 {
-        font-size: 3.5rem;
-        line-height: 1.1;
-        margin-bottom: 20px;
-    }
-
-    .project-meta {
-        color: #888888;
-        margin-bottom: 25px;
-    }
-
-    .project-lead {
-        max-width: 800px;
-        color: #bbbbbb;
-        font-size: 1.2rem;
+        padding: 24px 0;
     }
 
     .project-detail-section {
@@ -357,13 +328,68 @@ footer {
 
     .project-detail-section h2 {
         font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    /* Back Link */
+
+    .project-back-link {
+        display: inline-block;
+        color: #bbbbbb;
+        text-decoration: none;
+        margin-bottom: 24px;
+    }
+
+    .project-back-link:hover {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    /* Project Introduction */
+
+    .project-detail-intro .subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+    }
+
+    .project-detail-intro h1 {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        margin-bottom: 16px;
+    }
+
+    .project-meta {
+        color: #888888;
         margin-bottom: 20px;
+    }
+
+    .project-lead {
+        max-width: 800px;
+        color: #bbbbbb;
+        font-size: 1.2rem;
+        line-height: 1.7;
+        margin-bottom: 24px;
+    }
+
+    /* Project Categories */
+
+    .project-detail-section {
+        border-top: 1px solid #333333;
+    }
+
+    .project-detail-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
     }
 
     .project-detail-section > p {
         max-width: 800px;
         color: #bbbbbb;
+        line-height: 1.7;
     }
+
+    /* Technologies */
 
     .project-tags {
         display: flex;
@@ -379,34 +405,107 @@ footer {
         color: #bbbbbb;
     }
 
-    .project-media-placeholder {
-        border: 1px dashed #444444;
-        border-radius: 8px;
-        padding: 50px 20px;
-        text-align: center;
-        color: #888888;
-    }
-
-    @media (max-width: 800px) {
-        .project-detail-intro h1 {
-            font-size: 2.5rem;
-        }
-    }
-
-    /* Project Team Credits */
+    /* Team Credits */
 
     .project-credits {
         max-width: 800px;
         padding-left: 25px;
-        margin-top: 20px;
+        margin-top: 16px;
         color: #bbbbbb;
     }
 
     .project-credits li {
-        margin-bottom: 12px;
+        margin-bottom: 8px;
     }
 
     .project-credits strong {
         color: #ffffff;
+    }
+
+    /* Media Placeholder */
+
+    .project-media-placeholder {
+        border: 1px dashed #444444;
+        border-radius: 8px;
+        padding: 35px 20px;
+        text-align: center;
+        color: #888888;
+    }
+
+    /* Screenshot and GIF Gallery */
+
+    .project-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .project-gallery figure {
+        background-color: #1b1b1b;
+        border: 1px solid #333333;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .project-gallery img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .project-gallery figcaption {
+        padding: 12px 15px;
+        color: #bbbbbb;
+        font-size: 0.95rem;
+    }
+
+    /* Mobile Layout */
+
+    @media (max-width: 800px) {
+
+        .timeline-semester {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .timeline-date {
+            text-align: left;
+            padding-left: 35px;
+        }
+
+        .timeline-content {
+            padding-left: 35px;
+        }
+
+        nav {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav a {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .project-detail-intro h1 {
+            font-size: 2.5rem;
+        }
+
+        .project-page {
+            padding-top: 25px;
+        }
+
+        .project-page > section {
+            padding: 20px 0;
+        }
+
+        .project-gallery {
+            grid-template-columns: 1fr;
+        }
     }
 }
