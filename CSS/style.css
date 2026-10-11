@@ -120,7 +120,7 @@ section h2 {
 }
 
 
-/* College Project Timeline */
+/* Project Timeline */
 
 .timeline {
     margin-top: 50px;
@@ -599,5 +599,36 @@ main > section[id] {
 @media (max-width: 800px) {
     main > section[id] {
         scroll-margin-top: 130px;
+    }
+}
+
+.project-page .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-page .project-gallery figure {
+    overflow: hidden;
+    background-color: #1b1b1b;
+    border: 1px solid #333333;
+    border-radius: 8px;
+}
+
+.project-page .project-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-page .project-gallery figcaption {
+    padding: 12px 15px;
+    color: #bbbbbb;
+}
+
+@media (max-width: 800px) {
+    .project-page .project-gallery {
+        grid-template-columns: 1fr;
     }
 }

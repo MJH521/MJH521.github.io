@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poorly Maintained Road Simulator</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>Michael Hoffmann</h2>
+            <div>
+                <a href="../index.html#home">Home</a>
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#journey">Projects</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="project-page">
+
+        <section class="project-detail-intro">
+            <p class="subtitle">3D GAME DEVELOPMENT • SPRING 2026</p>
+            <h1>Poorly Maintained Road Simulator</h1>
+            <p class="project-meta">Unity • C#</p>
+            <p class="project-lead">
+                See how long you can drive on a poorly maintained road!
+            </p>
+            <p>
+                Currently no game build as of now, will update later.
+            </p>
+
+            <!-- When ready, replace PASTE_GAME_URL_HERE and remove the comment
+                 markers immediately surrounding the anchor below. -->
+            <!--
+            <a class="button"
+               href="PASTE_GAME_URL_HERE"
+               target="_blank"
+               rel="noopener noreferrer">
+                Play 3D Driving Game ↗
+            </a>
+            -->
+        </section>
+
+        <section class="project-detail-section">
+            <h2>Project Overview</h2>
+            <p>
+                In this game, you take a drive down a very poorly maintained road! Your goal is to survive as long as possible
+                as your car progressively gets faster! Avoid obstacles across 4 lanes and see how long you last!
+            </p>
+        </section>
+
+        <section class="project-detail-section">
+            <h2>My Contributions</h2>
+            <p>
+                I was responsible for programming the endless road tile spawner. 
+                This system randomly selects 1 of 20 made road prefabs from a configurable array and continuously generates new segments ahead of the player while removing segments behind the player.
+                The player does not move at all, the road tiles below move, and the player can switch between the 4 lanes from left to right.
+                The tiles are aligned using prefab exit points, configurable spawn and despawn distances, and a separate speed controller that supports a delayed start and gradual acceleration.
+                This array system can support interchangable road prefabs that feature individual lane terrain textures, environmental scenery, and obstacle placements. 
+                This allows for additional content to be integrated without modifying the core spawning logic.
+            </p>
+        </section>
+
+        <section class="project-detail-section">
+            <h2>Screenshots and Gameplay</h2>
+            <div class="project-media-placeholder">
+                <p>Screenshots and gameplay footage will be added here.</p>
+            </div>
+
+            <!-- Later: put media in img/3d-driving-game/ at the site root.
+                 Delete the placeholder div above, then remove the comment
+                 markers surrounding the gallery below. Match the filenames
+                 to your real files and update the descriptions and captions. -->
+            <!--
+            <div class="project-gallery">
+                <figure>
+                    <a href="../img/3d-driving-game/screenshot-01.png"
+                       target="_blank" rel="noopener noreferrer">
+                        <img src="../img/3d-driving-game/screenshot-01.png"
+                             alt="Describe what this screenshot shows"
+                             loading="lazy" decoding="async">
+                    </a>
+                    <figcaption>[Add a screenshot caption.]</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../img/3d-driving-game/gameplay-01.gif"
+                         alt="Describe the action in this gameplay clip"
+                         loading="lazy">
+                    <figcaption>[Add a gameplay caption.]</figcaption>
+                </figure>
+            </div>
+            -->
+        </section>
+
+        <section class="project-detail-section">
+            <h2>Team &amp; Credits</h2>
+            <p>
+                This was a class wide project for the second half of MAGD 372 - Intermediate Game Development. 
+                Everyone in the class who worked on this project is listed below:
+            </p>
+            <ul class="project-credits">
+                <li><strong>Michael</strong> — Programming</li>
+                <li><strong>Hudson</strong> — 2D / 3D Background</li>
+                <li><strong>Aidan</strong> — Programming</li>
+                <li><strong>Gannon</strong> — Level Design</li>
+                <li><strong>Danny</strong> — 2D / 3D Art</li>
+                <li><strong>Wyatt</strong> — Level Design, 2D / 3D Modeling</li>
+                <li><strong>Colton</strong> — Programming</li>
+                <li><strong>Nathan</strong> — Programming</li>
+                <li><strong>Tru</strong> — Audio / Music</li>
+
+            </ul>
+            <!-- Copy a list item for each additional teammate. For a solo
+                 project, delete the teammate placeholder item. -->
+        </section>
+
+        <a class="button" href="../index.html#journey">
+            ← Back to Projects
+        </a>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Michael Hoffmann</p>
+    </footer>
+</body>
+</html>
