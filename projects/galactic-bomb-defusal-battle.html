@@ -67,36 +67,39 @@
         </section>
 
         <section class="project-detail-section">
-            <h2>Screenshots and Gameplay</h2>
-            <div class="project-media-placeholder">
-                <p>Screenshots and gameplay footage will be added here.</p>
-            </div>
+        <h2>Gameplay and Showcase</h2>
 
-            <!-- Later: put media in img/galactic-bomb-defusal-battle/ at the site root.
-                 Delete the placeholder div above, then remove the comment
-                 markers surrounding the gallery below. Match the filenames
-                 to your real files and update the descriptions and captions. -->
-            <!--
-            <div class="project-gallery">
-                <figure>
-                    <a href="../img/galactic-bomb-defusal-battle/screenshot-01.png"
-                       target="_blank" rel="noopener noreferrer">
-                        <img src="../img/galactic-bomb-defusal-battle/screenshot-01.png"
-                             alt="Describe what this screenshot shows"
-                             loading="lazy" decoding="async">
-                    </a>
-                    <figcaption>[Add a screenshot caption.]</figcaption>
-                </figure>
+        <div class="project-gallery project-gallery--stacked">
+            <figure>
+                <a href="../img/galactic-bomb-defusal-battle/galactic_battle_gameplay.gif" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="../img/galactic-bomb-defusal-battle/galactic_battle_gameplay.gif"
+                        alt="A player-controlled spaceship moves and fires among enemies and obstacles."
+                        width="800"
+                        height="453"
+                        loading="lazy"
+                        decoding="async">
+                </a>
+                <figcaption>Gameplay: navigating the arena, fighting enemy ships, and preventing the bomb timer from expiring.</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="../img/galactic-bomb-defusal-battle/galactic_battle_showcase.gif" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="../img/galactic-bomb-defusal-battle/galactic_battle_showcase.gif"
+                        alt="The Unity editor displays the space arena and the game running alongside it."
+                        width="800"
+                        height="229"
+                        loading="lazy"
+                        decoding="async">
+                </a>
+                <figcaption>Development showcase in the Unity editor: bomb layer that can kill the player disables and
+                    defused bomb appears in order to be collected.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
 
-                <figure>
-                    <img src="../img/galactic-bomb-defusal-battle/gameplay-01.gif"
-                         alt="Describe the action in this gameplay clip"
-                         loading="lazy">
-                    <figcaption>[Add a gameplay caption.]</figcaption>
-                </figure>
-            </div>
-            -->
-        </section>
 
         <section class="project-detail-section">
             <h2>Team &amp; Credits</h2>
@@ -107,8 +110,6 @@
             <ul class="project-credits">
             <!--    <li><strong>Michael Hoffmann</strong> — [Your roles]</li> -->
             </ul>
-            <!-- Copy a list item for each additional teammate. For a solo
-                 project, delete the teammate placeholder item. -->
         </section>
 
         <a class="button" href="../index.html#journey">
@@ -120,5 +121,6 @@
     <footer>
         <p>© 2026 Michael Hoffmann</p>
     </footer>
+    <script src="../JS/gallery-viewer.js"></script>
 </body>
 </html>

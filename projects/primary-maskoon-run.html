@@ -60,37 +60,38 @@
             </p>
         </section>
 
-        <section class="project-detail-section">
-            <h2>Screenshots and Gameplay</h2>
-            <div class="project-media-placeholder">
-                <p>Screenshots and gameplay footage will be added here.</p>
-            </div>
+    <section class="project-detail-section">
+        <h2>Gameplay and Showcase</h2>
 
-            <!-- Later: put media in img/primary-maskoon-run/ at the site root.
-                 Delete the placeholder div above, then remove the comment
-                 markers surrounding the gallery below. Match the filenames
-                 to your real files and update the descriptions and captions. -->
-            <!--
-            <div class="project-gallery">
-                <figure>
-                    <a href="../img/primary-maskoon-run/screenshot-01.png"
-                       target="_blank" rel="noopener noreferrer">
-                        <img src="../img/primary-maskoon-run/screenshot-01.png"
-                             alt="Describe what this screenshot shows"
-                             loading="lazy" decoding="async">
-                    </a>
-                    <figcaption>[Add a screenshot caption.]</figcaption>
-                </figure>
+        <div class="project-gallery project-gallery--stacked">
+            <figure>
+                <a href="../img/primary-maskoon-run/maskoon_gameplay.gif" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="../img/primary-maskoon-run/maskoon_gameplay.gif"
+                        alt="The raccoon runs along platforms, jumps over gaps, and changes mask colors."
+                        width="800"
+                        height="453"
+                        loading="lazy"
+                        decoding="async">
+                </a>
+                <figcaption>Gameplay: running and jumping through the level and phasing through colored walls with the correct mask color.</figcaption>
+            </figure>
 
-                <figure>
-                    <img src="../img/primary-maskoon-run/gameplay-01.gif"
-                         alt="Describe the action in this gameplay clip"
-                         loading="lazy">
-                    <figcaption>[Add a gameplay caption.]</figcaption>
-                </figure>
-            </div>
-            -->
-        </section>
+            <figure>
+                <a href="../img/primary-maskoon-run/maskoon_showcase.gif" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="../img/primary-maskoon-run/maskoon_showcase.gif"
+                        alt="An animated raccoon character changes mask colors in the Unity editor."
+                        width="800"
+                        height="410"
+                        loading="lazy"
+                        decoding="async">
+                </a>
+                <figcaption>Development showcase in the Unity editor: reccoon running animation and layer changing for the mask colors.</figcaption>
+            </figure>
+        </div>
+    </section>
+
 
         <section class="project-detail-section">
             <h2>Team &amp; Credits</h2>
@@ -104,8 +105,6 @@
                 <li><strong>Jacob</strong> — Programming</li>
                 <li><strong>Jasper</strong> — 2D Art / Story</li>
             </ul>
-            <!-- Copy a list item for each additional teammate. For a solo
-                 project, delete the teammate placeholder item. -->
         </section>
 
         <a class="button" href="../index.html#journey">
@@ -117,5 +116,6 @@
     <footer>
         <p>© 2026 Michael Hoffmann</p>
     </footer>
+    <script src="../JS/gallery-viewer.js"></script>
 </body>
 </html>
