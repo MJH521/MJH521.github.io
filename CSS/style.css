@@ -725,3 +725,7 @@ main > section[id] {
     user-select: all;
     overflow-wrap: anywhere;
 }
+
+.project-page .project-detail-section p {
+    color: #bbbbbb;
+}
